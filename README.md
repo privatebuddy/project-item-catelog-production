@@ -50,3 +50,62 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
+10. Test Running the project by using sudo python app.py if it not error deactivate it
+```
+deactivate
+```
+11. config apache site by using nano editor to create file back-end-conf
+```
+sudo nano /etc/apache2/sites-available/back-end.conf
+```
+12. put the following configuration
+```
+<VirtualHost *:80>
+    ServerName server
+    ServerAdmin admin@email
+    WSGIScriptAlias / /var/www/project-item-catalog/back-
+    end/back-end.wsgi
+
+    <Directory /var/www/project-item-catalog/back-end>
+      Order allow,deny
+      Allow from all
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    LogLevel warn
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+13. create wsgi file in our directory
+```
+cd /var/www/project-item/project-item-catalog/back-end
+sudo nano back-end.wsgi
+```
+14. add following config to the file
+```
+#!/usr/bin/python
+import sys
+import logging
+logging.basicConfig(stream=sys.stderr)
+
+sys.path.insert(0,"/var/www/project-item/project-item-
+catalog/back-end")
+from app import app as application
+application.secret_key = 'project secret key'
+```
+15. enable on apache
+```
+sudo nano /etc/apache2/sites-available/back-end.conf
+```
+16. Apache default will strip header from request we set so to use jwt we need to config the apache 
+```
+cd /etc/apache2
+sudo nano apache2.conf
+```
+17. Add Following line to the file 
+```
+WSGIPAssAuthorization On
+```
+18. Restart Apache and the webservice will start to running
+```
+sudo service apache2 restart
+```
