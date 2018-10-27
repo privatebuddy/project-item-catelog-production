@@ -6,7 +6,8 @@ Amazon lightsail
 - Link : https://lightsail.aws.amazon.com
 
 ## Application Path :
-- http://13.229.131.118
+- http://13.229.248.180 : front-site
+- http://3.0.95.10 : back-end API service
 
 ## Project Detail : 
 - Develop using Flask as Back-end host with Ubuntu version 16.04 LTS
