@@ -201,12 +201,12 @@ sometime it need to allow to use password first to move the public key in then j
 Sasin Siriskaowkul
 
 ## Build with
-[Flask](http://flask.pocoo.org/) - The Back-end python framework used
-[SQLAlchemy](https://www.sqlalchemy.org/) - The Back-end python object ORM
-[Google Sign In](https://developers.google.com/identity/sign-in/web/) - Google sign-in
-[JWT Token](https://jwt.io/)- For Authenticate and Authorization
-[React](https://reactjs.org/)- For Front-end development
-[Semantic UI](https://semantic-ui.com/)- For UI Theme of the Front-end
+- [Flask](http://flask.pocoo.org/) - The Back-end python framework used
+- [SQLAlchemy](https://www.sqlalchemy.org/) - The Back-end python object ORM
+- [Google Sign In](https://developers.google.com/identity/sign-in/web/) - Google sign-in
+- [JWT Token](https://jwt.io/)- For Authenticate and Authorization
+- [React](https://reactjs.org/)- For Front-end development
+- [Semantic UI](https://semantic-ui.com/)- For UI Theme of the Front-end
 
 ## Acknowledgments
 - https://medium.com/@timmykko/deploying-create-react-app-with-nginx-and-ubuntu-e6fe83c5e9e7
