@@ -1,7 +1,7 @@
-# project-item-catelog-production
-Part of Project-item-catelog
+# Project Item Catalog
+Project use to study Udacity Full Stack Developer which can be use for small invenotry project
 
-## The second largest headingFor deployment of project item catalog is host on 
+## Project Host
 Amazon lightsail 
 - Link : https://lightsail.aws.amazon.com
 
@@ -13,3 +13,9 @@ Amazon lightsail
 - React as Front-end host with Ubuntu version 16.04 LTS
 
 ## Project Setup
+
+1. Connect to server using SSH key
+2. Run update
+```
+sudo apt-get update
+```
