@@ -9,7 +9,7 @@ Amazon lightsail
 - http://13.229.131.118
 
 ## Project Detail : 
-- Develop using Flask as Back-end 
-- React as Front-end
+- Develop using Flask as Back-end host with Ubuntu version 16.04 LTS
+- React as Front-end host with Ubuntu version 16.04 LTS
 
-
+## Project Setup
